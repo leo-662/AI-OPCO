@@ -7,6 +7,7 @@
     --light-bg: #f8f9fa;
     --white: #fff;
     --dark-blue: #0056b3;
+    --whatsapp-color: #25D366; /* Color de WhatsApp */
 }
 
 /* Reset y Estilos Generales */
@@ -329,6 +330,30 @@ footer {
     margin-top: 30px;
 }
 
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--whatsapp-color);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1DA851; /* Un verde un poco más oscuro al pasar el mouse */
+    transform: scale(1.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .container {
@@ -349,12 +374,20 @@ footer {
         font-size: 2.5em;
     }
 
-    .service-grid, .pricing-grid { /* Eliminado .testimonial-grid */
+    .service-grid, .pricing-grid {
         grid-template-columns: 1fr;
     }
 
     .pricing-card.featured {
         transform: scale(1.0); /* Remove scale on small screens */
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+        bottom: 15px;
+        right: 15px;
     }
 }
 
