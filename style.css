@@ -61,7 +61,16 @@ a:hover {
     text-align: center;
     transition: background-color 0.3s ease;
     margin-top: 20px;
+    font-size: 1.1em;
 }
+
+/* Removido el .small-text porque ya no se usa con el nuevo formato del botón */
+/* .btn .small-text {
+    font-size: 0.7em;
+    vertical-align: super;
+    opacity: 0.8;
+} */
+
 
 .btn:hover {
     background: var(--dark-blue);
@@ -238,6 +247,13 @@ section:nth-of-type(even) {
     color: #dc3545; /* Rojo para no disponible */
     margin-right: 10px;
 }
+
+/* Removido el small-text-inline si no se va a usar */
+/* .pricing-card ul li .small-text-inline {
+    font-size: 0.8em;
+    margin-left: 5px;
+    opacity: 0.8;
+} */
 
 .pricing-card .price {
     font-size: 2.2em;
